@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы HTML и CSS</title>
+    <link rel="icon" href="pin.gif" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>Основы HTML и CSS</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#html-basic"> HTML Основы</a></li>
+                <li><a href="#css-basic"> CSS Основы</a></li>
+                <li><a href="https://moodle.ngknn.ru/"> HTML Основы</a></li>
+                <li><a href="newpage.html">NewPage</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="container">
+        <section id="html-basic" class="section">
+            <h2>
+                <i class="fas fa-file-code"></i>
+                Основные HTML теги
+            </h2>
+            <article class="card">
+                <h3>Заголовки</h3>
+                <h1>Заголовок 1 уровня</h1>
+                <h2>Заголовок 2 уровня</h2>
+                <h4>Заголовок 4 уровня</h4>
+                <h5>Заголовок 5 уровня</h5>
+                <h6>Заголовок 6 уровня</h6>
+            </article>
+            <article class="card">
+                <h3>Текстовые элементы</h3>
+                <p>Это обычный текст</p>
+                <p>
+                    <strong>Жирный текст</strong>,
+                    <em>Курсив</em>,
+                    <mark>
+                        Выделение
+                    </mark>,
+                    <small>Маленький текст</small>,
+                    <del>Удаленный текст</del>,
+                    <ins>Вставленный текст</ins>
+                </p>
+                <p>
+                    Формулы: H<sub>2</sub>O и x<sup>2</sup> + y<sup>2</sup> = z <sup>2</sup>
+                </p>
+                <blockquote>
+                    Это какая-то цитата про HTML
+                    <cite> - Веб-разработчик</cite>
+                </blockquote>
+
+                <pre>
+                    <code> 
+//Пример кода
+function helloWorld(){
+console.log("Привет мир!")
+}
+                    </code>
+                </pre>
+            </article>
+            <article class="card">
+                <h3>Списки</h3>
+                <div class="list-container">
+                    <div>
+                        <h4>
+                            Маркированный список
+                        </h4>
+                        <ul>
+                            <li>Первый элемент</li>
+                            <li>Второй элемент</li>
+                            <li>Третий элемент
+                                <ul>
+                                    <li>
+                                        Вложенный элемент
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>
+                            Нумерованный список
+                        </h4>
+                        <ol>
+                            <li>
+                                Первый пункт
+                            </li>
+                            <li>
+                                Второй пункт
+                            </li>
+                            <li>
+                                Третий пункт
+                            </li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h4>Список определений</h4>
+                        <dl>
+                            <dt>HTML</dt>
+                            <dd>Язык гипертекствой разметки</dd>
+                            <dt>HTML</dt>
+                            <dd>Язык гипертекствой разметки</dd>
+                        </dl>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <h3>Ссылки и изображения</h3>
+                <p>
+                    Это <a href="#html-basic">
+                        ссылка на раздел</a>, а это <a href="https://ya.ru" target="_blank"> внешняя ссылка</a>
+                </p>
+                <div class="media-container">
+                    <div>
+                        <h4>Изображения</h4>
+                        <img src="https://avatars.mds.yandex.net/i?id=d33fed4b76ddaf6439222a5c704c4690_l-10650891-images-thumbs&n=13"
+                            alt="Пример изображения" />
+                    </div>
+                    <div>
+                        <h4>Видео:</h4>
+                        <div class="video-placeholder">
+                            <i class="fas fa-video"></i>
+                            <p>Место для видео</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="section" id="css-basic">
+            <h2>
+                <i class="fas fa-paint-brush"></i>
+                Основы CSS
+            </h2>
+            <article class="card">
+                <h3>Селекторы</h3>
+                <div class="selectors-demo">
+                    <div class="selector-example" id="unique-element">
+                        #id-selector
+                    </div>
+                    <div class="selector-example">.class selector</div>
+                    <div class="selector-example"> element-selector</div>
+                    <div class="selector-example" id="unique-element">
+                        #id-selector
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <h3>
+                    Цвета и фон
+                </h3>
+                <div class="selectors-demo">
+                    <div class="color-box" style="background-color: #ff6b6b;">HEX</div>
+                    <div class="color-box" style="background-color: rgb(77,171,247)">RGB</div>
+                    <div class="color-box" style="background-color: hsl(120, 60%, 70%)">HSL</div>
+                    <div class="color-box gradient-bg">Градиент</div>
+                </div>
+            </article>
+            <article class="card">
+                <h3>Типографика</h3>
+                <div class="typegraphy-demo">
+                    <p class="font-serif">Serif шрифт - классический стиль</p>
+                    <p class="font-sans">Sans шрифт - соверменный стиль</p>
+                    <p class="font-monospace">Monospace шрифт - для кода</p>
+                    <p class="text-transform">разные варианты трансформации текста</p>
+
+                </div>
+            </article>
+            <article class="card">
+                <h3>
+                    Box Model
+                </h3>
+                <div class="box-model-demo">
+                    <div class="box-content">CONTENT</div>
+                </div>
+                <div class="box-model-labels">
+                    <span>Margin</span>
+                    <span>Border</span>
+                    <span>Padding</span>
+                    <span>Content</span>
+
+                </div>
+            </article>
+        </section>
+        <section class="section">
+            <h2><i class="fas fa-th"></i> Макет и позиционирование</h2>
+            <article class="card">
+                <h3>Flexbox</h3>
+                <div class="flex-container">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+
+                </div>
+            </article>
+            <article class="card">
+                <h3>Позиционирование</h3>
+                <div class="position-demo">
+                    <div class="position-static"> Static</div>
+                    <div class="position-relative"> Realtive</div>
+                    <div class="position-absolute"> Absolute</div>
+                 
+                    <div class="position-sticky"> Sticky</div>
+
+
+                </div>
+            </article>
+            <article class="card">
+                <h3>Grid</h3>
+                <div class="grid-container">
+                    <div class="grid-item header">Header </div>
+                    <div class="grid-item sidebar">Sidebar </div>
+                    <div class="grid-item main">Main </div>
+                    <div class="grid-item footer">Footer </div>
+
+                </div>
+            </article>
+        </section>
+        <section class="section" id="form">
+            <h2><i class="fas fa-edit"></i> Формы и элементы ввода</h2>
+
+            <article class="card">
+                <h3>Пример формы</h3>
+                <form class="form-example">
+                    <div class="form-group">
+                        <label for="name">Имя:
+                        </label>
+                        <input type="text" id="name" placeholder="Введите ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:
+                        </label>
+                        <input type="email" id="email" placeholder="Введите ваш email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Пароль:
+                        </label>
+                        <input type="password" id="password" placeholder="Введите ваш пароль">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение:
+                        </label>
+                        <textarea id="message" rows="4" placeholder="Введите ваше сообщение"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Страна:
+                        </label>
+                        <select id="country">
+                            <option value="">Выберите страну</option>
+                            <option value="R">Russia</option>
+                            <option value="U">USA</option>
+                            <option value="C">Canada</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Интересы:
+                        </label>
+                        <div class="checkbox-group">
+                            <label for=""><input type="checkbox" name=" interests" value="web">Веб-разработка</label>
+                            <label for=""><input type="checkbox" name=" interests1" value="mob">Мобильная
+                                разработка</label>
+                            <label for=""><input type="checkbox" name=" interests2" value="C">1C</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Пол:
+                        </label>
+                        <div class="radio-group">
+                            <label for=""><input type="radio" name="gender" value="male">Мужской</label>
+                            <label for=""><input type="radio" name="gender" value="female">Женский</label>
+
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Уровень навыков:
+                        </label>
+                        <input type="range" id="range" min="1" max="10" value="5">
+
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                        <button type="reset" class="btn btn-secondary">Сбросить</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+        <section class="container" id="table">
+            <h2><i class="fas fa-table"></i> Таблицы</h2>
+            <article class="card">
+                <h3>Пример таблицы</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Тег</th>
+                            <th>Описание</th>
+                            <th>Пример</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;div&gt;</td>
+                            <td>Блочный котейнер</td>
+                            <td><code>&lt;div&gt;Контент&lt;/div&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;span&gt;</td>
+                            <td>Строчный контейнер</td>
+                            <td><code>&lt;span&gt;Текст&lt;/span&gt;</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <section class="section" id="more-html">
+            <article class="card">
+                <div class="media-elements">
+                    <div>
+                        <h4>Аудио</h4>
+                        <audio controls>
+                            <source src="1.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                    <div>
+                        <iframe src="https://vk.com/video_ext.php?oid=-21665793&id=456240948&hash=befec178c9b170a2"
+                            width="640" height="360" frameborder="0" allowfullscreen="1" style="background-color: #000"
+                            allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+                    </div>
+                </div>
+                <div>
+                    <h4>Прогресс</h4>
+                    <progress value="70" max="100">70%</progress>
+                </div>
+                <div>
+                    <h4>Meter:</h4>
+                    <meter value="0.6" min="0" low="0.2" high="0.8" optimum="0.7"></meter>
+                </div>
+            </article>
+            <article class="card">
+                <h3>Интерактивные элементы</h3>
+                <div class="interactive-demo">
+                    <div>
+                        <h4>Деатли и суммарно:</h4>
+                        <details>
+                            <summary>Нажмите для раскрытия</summary>
+                            <p>Скрытый контент</p>
+                        </details>
+                    </div>
+                    <div>
+                        <h4>Диалог</h4>
+                        <button onclick="document.getElementById('demoDialog').showModal()">Открыть диалог</button>
+                        <dialog id ="demoDialog">
+                            <p>Это модальное окно</p>
+                            <button onclick="document.getElementById('demoDialog').close()">Закрыть диалог</button>
+                
+                        </dialog>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="more-css">
+            <h2><i class="fas fa-magic"></i> Дополнительные CSS концепции</h2>
+
+            <article class="card">
+                <h3>Анимации и переходы</h3>
+                <div class="animation-demo">
+                    <div class="trasitopn-box">Transition (наведи)</div>
+                    <div class="animation-box">Animation</div>
+                    <div class="transform-box">Transform (наведи)</div>
+                </div>
+            </article>
+            <article class="card">
+                <h3>Фильтры и Blend Modes</h3>
+                <div class="filter-demo">
+                    <div class="filter-item">
+                        <img src="https://avatars.mds.yandex.net/i?id=df30b5c6b49b28ca754324c324b037b8_l-5548878-images-thumbs&n=13" alt="Оригинал">
+                        <p>Оригинал</p>
+                    </div>
+                    <div class="filter-item blur">
+                    <img src="https://avatars.mds.yandex.net/i?id=df30b5c6b49b28ca754324c324b037b8_l-5548878-images-thumbs&n=13" alt="Оригинал">
+                    <p>Blur</p>
+                </div>
+                    <div class="filter-item grayscale">
+                    <img src="https://avatars.mds.yandex.net/i?id=df30b5c6b49b28ca754324c324b037b8_l-5548878-images-thumbs&n=13" alt="Оригинал">
+                    <p>Grayscale</p>
+                </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>2026 Демонстрация HTML и CSS чуть-чуть JS</p>
+        <div class="footer-links">
+            <a href="https://github.com"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+        <div class="floating-button">
+            <a href="#top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+  
+</body>
+<script>
+    // Обработчик события загрузки DOM
+    document.addEventListener('DOMContentLoaded', function () {
+
+        // Интерактивность для карточек
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                // Эффект при наведении
+                this.style.transform = 'translateY(-5px)';
+            });
+            card.addEventListener('mouseleave', function () {
+                // Возврат в исходное состояние
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Обработка отправки формы
+        const form = document.querySelector('.form-example');
+        if (form) {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault(); // Отмена стандартной отправки
+                alert('Форма отправлена! (Это демонстрация)');
+            });
+        }
+    });
+</script>
+
+</html>
